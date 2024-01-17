@@ -150,3 +150,16 @@ function sum(){
  let result=n+15
  console.log(result)
  console.log(isNaN(result))
+
+
+ //NON PRIMITIVE
+ //Array,Object
+//referansla çağırılabilen yapılardır
+ let personelList=["Ali","Ayşe","Sema"]  //Array
+let personelData={name:"Ali",surname:"Güven", age:"45"} //Object
+
+//function
+function sum(){
+    return "toplam=4"
+}
+
