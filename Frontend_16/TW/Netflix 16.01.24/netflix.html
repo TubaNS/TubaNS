@@ -7,22 +7,27 @@
     <title>NetFlix</title>
   </head>
   <body>
+    <div id="container">
+        <div>
+            <div>
     <h1>Net<span id="flix">Flix</span></h1>
-    <h4>Thank you for signing up at Netflix. Tell us more about yourself.</h4>
-
+    <p id="description">Thank you for signing up at Netflix. Tell us more about yourself.</p>
+<!-- formu submite bastıktan sonra formun sunucuya spnuçları götürmesi için yapıyoruz. farklı bir html açıyoruz ve oraya bağlıyoruz -->
+    <form id="Survey-Form" action="./action.html">
+    </div>
     <!-- text -->
-    <div>  
+    <div class="box">  
       <label for="name">Name</label> <br/>
       <input
         type="text"
         id="name"
-        name="Enter your name"
+        name="name"
         placeholder="Enter your name"/>
       <br/><br/>
     </div>
 
     <!-- number -->
-    <div> 
+    <div class="box"> 
       <label for="age">Age</label><br/>
       <input type="number" name="Age" placeholder="Age" step="1" min="18"/>
       <br /><br />
@@ -30,7 +35,7 @@
 
 
     <!-- email -->
-    <div>  
+    <div class="box">  
       <label for="email">Email</label><br />
       <input type="email" name="Email" placeholder="Enter your email" />
       <br /><br />
@@ -38,11 +43,12 @@
 
 
     <!-- select ve option ile -->
-    <div>  
-      <label for="contentType">Content Type</label>
+    <div class="box">  
+      <label for="contenttype">Content Type</label>
       <br>
-      <select name="Series" id="Series" size="1" >
+      <select name="Series" id="contentype size="1">
         <option value="Series">Series</option>
+        <option value="films">Films</option>
       </select>
       
     </div>
@@ -51,16 +57,18 @@
     <!-- checkbox  --> 
     <!-- value kullanıcıdan almka istediğimiz seçeneği görmek için kullanılıyor -->
     <div>
-        <span>Movie Type</span><br>
+        <p>Movie Type </p>
 
-        <input type="checkbox" name="Comedy" id="comedy" value="Comedy">
+        <input type="checkbox" name="Comedy" id="comedy" >
         <label for="comedy">Comedy</label><br>
 
-        <input type="checkbox" name="Action" id="action" value="Action">
+        <input type="checkbox" name="Action" id="action" >
         <label for="action">Action</label><br>
 
-        <input type="checkbox" name="Romance" id="romance" value="Romance">
+        <input type="checkbox" name="Romance" id="romance" checked >
         <label for="Romance">Romance</label>
+
+        <!-- checked yazdığında sitede oraası seçili olarak gösteriyor -->
     </div>
 
 
@@ -68,13 +76,13 @@
     <div>
         <p>Gender</p>
 
-        <input type="radio" id="gender1" name="gender" value="Male">
+        <input type="radio" id="male" name="gender" >
         <label for="gender1">Male</label><br>
 
-        <input type="radio" id="gender2" name="gender" value="Female">
+        <input type="radio" id="female" name="gender" >
         <label for="gender2">Female</label><br>
 
-        <input type="radio" id="gender3" name="gender" value="other">
+        <input type="radio" id="other" name="gender" ">
         <label for="gender3">Other</label>
 <br><br>
 
@@ -85,8 +93,14 @@
     
 <br>
 <input type="submit" value="Submit">
+</form> 
 
-    </div>    
+    </div>   
+    
+  
+</div>
+
+</div>
 
   </body>
 </html>
