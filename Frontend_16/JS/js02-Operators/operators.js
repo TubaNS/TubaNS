@@ -14,6 +14,10 @@ console.log(a/b)
 console.log(a**6) //üssü alma işlemi
 console.log(a % 2) //remainder (modules) kalanı bulma
 
+
+// let z=253
+// console.log(z%11)
+
 console.log(360/60)
 console.log(375 % 60)
 
@@ -34,7 +38,12 @@ console.log(hour)
 
 let minute=375 % 60
 console.log(`375 dakika=> ${hour}:${minute}`)
-console.clear()
+
+// gün sorma
+let day=180 % 7
+console.log(day);
+
+// console.clear()
 
 //INCREMENT / DECREMENT
 
@@ -57,7 +66,7 @@ console.log(--x)
 
 // for(let i ; i<20; i++) bu sonra kullanılacak
 
-console.clear()
+// console.clear()
 
 /*----------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -88,7 +97,7 @@ console.log(h +=k)
 let sayi=45.986
 console.log(Math.trunc(sayi))
 console.log(sayi)
-console.clear()
+// console.clear()
 
 /* -------------------------------------------------------------------------- */
 /*                            COMPARISON OPERATORS                            */
@@ -131,7 +140,7 @@ console.log(Boolean([]))
 console.log([] && 0 && 2)
 console.log([] && "M" && 5)
 
-console.clear()
+// console.clear()
 //! OR- ||
 //Herşey false olsa bile bir tane true, true döndürmeye yeter
 // Hepsi false ise en son false değerini verir

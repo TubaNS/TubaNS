@@ -84,8 +84,9 @@ console.log(str1);
 
 let kimlik=2422343232
 let adSoyad="John Smith"
+let yass=45
 
-console.log("Personelimiz", adSoyad,"'in Kimlik numarası:", kimlik)
+console.log("Personelimiz", adSoyad,"'in Kimlik numarası:", kimlik, yass)
 //Template Literal, string literal
 
 //stringleri dinamik olarak kullanılmayı sağlar
@@ -93,7 +94,7 @@ console.log("Personelimiz", adSoyad,"'in Kimlik numarası:", kimlik)
 // stringler yazılırken değişkenlerde kullanılanabilmemizi sağlar
 
 console.log(`Personelimiz ${adSoyad}'in 
-Kimlik Numarası:${kimlik}`)
+Kimlik Numarası:${kimlik} yaş'ı :${yass}`)
 
 console.clear()
 
@@ -128,7 +129,7 @@ console.log(Boolean(null==null));
 console.log(Boolean)
 console.log(null+5)
 
-console.clear()
+// console.clear()
 
 //!UNDEFINED
 
